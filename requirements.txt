@@ -1,0 +1,9 @@
+Flask
+requests
+pandas
+openpyxl
+selenium
+webdriver-manager
+flask-cors
+python-dotenv
+python-amazon-sp-api==2.1.23

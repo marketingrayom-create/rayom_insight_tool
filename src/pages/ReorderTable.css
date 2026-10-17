@@ -1,0 +1,10 @@
+.product-performance-table .planning-column-header{min-width:125px;white-space:normal;background:#edf5f9;color:#244362}
+.product-performance-table .planning-column{font-variant-numeric:tabular-nums;min-width:125px}
+.product-performance-table .planning-column input{width:96px;padding:7px;border:1px solid #c6d3de;border-radius:5px;font-size:12px;background:#fff;color:#263445}
+.product-performance-table .planning-final{background:#edf8f1;font-weight:700;color:#205d38}
+.product-performance-table .planning-actions{min-width:150px}
+.planning-actions button{display:block;width:140px;margin:4px auto;padding:6px;border:1px solid #bccddc;border-radius:4px;background:#fff;color:#254663;cursor:pointer}
+.planning-actions button:disabled{opacity:.5;cursor:default}
+.planning-table-note{margin:8px 20px;padding:10px 12px;background:#f2f6fa;color:#536779;font-size:12px;line-height:1.6}
+
+.product-performance-table th.planning-formula-header{background:#4e761f;color:#fff}

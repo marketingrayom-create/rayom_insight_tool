@@ -1,0 +1,249 @@
+[AMAZON] POST /api/amazon/fulfillment-orders registered
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN0 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN1 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN2 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN3 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN4 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN5 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN6 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN7 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN8 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN9 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN10 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN11 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN12 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN13 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN14 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN15 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN16 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN17 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN18 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 19
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN0 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN1 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN2 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN3 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN4 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN5 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN6 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN7 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN8 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN9 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN10 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN11 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN12 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN13 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN14 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN15 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN16 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN17 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN18 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 19
+[INVENTORY DEBUG] ASIN0 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 0', 'brand': None, 'sku': 'SKU0', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN1 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 1', 'brand': None, 'sku': 'SKU1', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN2 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 2', 'brand': None, 'sku': 'SKU2', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN3 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 3', 'brand': None, 'sku': 'SKU3', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN4 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 4', 'brand': None, 'sku': 'SKU4', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN5 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 5', 'brand': None, 'sku': 'SKU5', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN6 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 6', 'brand': None, 'sku': 'SKU6', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN7 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 7', 'brand': None, 'sku': 'SKU7', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN8 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 8', 'brand': None, 'sku': 'SKU8', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN9 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 9', 'brand': None, 'sku': 'SKU9', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN10 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 10', 'brand': None, 'sku': 'SKU10', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN11 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 11', 'brand': None, 'sku': 'SKU11', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN12 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 12', 'brand': None, 'sku': 'SKU12', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN13 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 13', 'brand': None, 'sku': 'SKU13', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN14 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 14', 'brand': None, 'sku': 'SKU14', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN15 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 15', 'brand': None, 'sku': 'SKU15', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN16 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 16', 'brand': None, 'sku': 'SKU16', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN17 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 17', 'brand': None, 'sku': 'SKU17', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN18 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 18', 'brand': None, 'sku': 'SKU18', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+Inventory products parsed: 2
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN0 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN1 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN2 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN3 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN4 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN5 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN6 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN7 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN8 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN9 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN10 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN11 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 12
+[INVENTORY DEBUG] ASIN0 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 0', 'brand': None, 'sku': 'SKU0', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN1 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 1', 'brand': None, 'sku': 'SKU1', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN2 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 2', 'brand': None, 'sku': 'SKU2', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN3 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 3', 'brand': None, 'sku': 'SKU3', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN4 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 4', 'brand': None, 'sku': 'SKU4', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN5 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 5', 'brand': None, 'sku': 'SKU5', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN6 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 6', 'brand': None, 'sku': 'SKU6', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN7 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 7', 'brand': None, 'sku': 'SKU7', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN8 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 8', 'brand': None, 'sku': 'SKU8', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN9 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 9', 'brand': None, 'sku': 'SKU9', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN10 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 10', 'brand': None, 'sku': 'SKU10', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN11 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 11', 'brand': None, 'sku': 'SKU11', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN0 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN0 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN1 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN1 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN2 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN2 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN3 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN3 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN4 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN4 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN5 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN5 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN6 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN6 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN7 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN8 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN9 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN10 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN11 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 1
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN0 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN1 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN2 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN3 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN4 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN5 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN6 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN7 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN8 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN9 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN10 | FBM=0 | FBA=0 | price=None | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] ASIN11 | FBM=0 | FBA=0 | price=None | brand=None
+Listings products parsed: 12
+[INVENTORY DEBUG] ASIN0 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 0', 'brand': None, 'sku': 'SKU0', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN1 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 1', 'brand': None, 'sku': 'SKU1', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN2 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 2', 'brand': None, 'sku': 'SKU2', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN3 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 3', 'brand': None, 'sku': 'SKU3', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN4 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 4', 'brand': None, 'sku': 'SKU4', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN5 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 5', 'brand': None, 'sku': 'SKU5', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN6 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 6', 'brand': None, 'sku': 'SKU6', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN7 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 7', 'brand': None, 'sku': 'SKU7', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN8 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 8', 'brand': None, 'sku': 'SKU8', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN9 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 9', 'brand': None, 'sku': 'SKU9', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN10 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 10', 'brand': None, 'sku': 'SKU10', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] ASIN11 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': None, 'title': 'Product 11', 'brand': None, 'sku': 'SKU11', 'fnSku': None, 'status': None, 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+Listings products parsed: 0
+----------------------------------------------------------------------
+Ran 6 tests in 0.028s
+
+OK

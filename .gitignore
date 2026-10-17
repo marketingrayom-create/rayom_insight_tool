@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+backend/beacon-cookie.local.txt
+__pycache__/
+
+.tools/
+.npm-cache/
+.reference/
+
+backend/meta_campaigns.sqlite3*
+
+backend/reorder_planning.sqlite3*

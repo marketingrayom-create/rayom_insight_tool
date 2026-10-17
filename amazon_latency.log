@@ -1,0 +1,148 @@
+[AMAZON] POST /api/amazon/fulfillment-orders registered
+TIMING sales_report 0.0
+Inventory products parsed: 8
+TIMING inventory_map 2.08
+TIMING seller_listing_items 2.69
+[ORDERS] Orders fetched: 55 from 2026-09-09T05:58:40.737464+00:00 to 2026-10-09T05:58:40.737464+00:00
+[ORDERS] Brand sales calculated for 11 ASINs from 55 orders
+TIMING amazon_brand_sales 64.5
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTR3VNL | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTPVCQJ | FBM=2949 | FBA=0 | price=951 | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'value': 'Unfooled', 'language_tag': 'en_IN', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=Unfooled
+[LISTING] B0HF84B8C9 | FBM=0 | FBA=0 | price=799 | brand=Unfooled
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'value': 'Unfooled', 'language_tag': 'en_IN', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=Unfooled
+[LISTING] B0HFZVS664 | FBM=0 | FBA=0 | price=199 | brand=Unfooled
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'value': 'Unfooled', 'language_tag': 'en_IN', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=Unfooled
+[LISTING] B0HJC6G2QY | FBM=0 | FBA=0 | price=None | brand=Unfooled
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] B0HDTPJPH1 | FBM=2802 | FBA=0 | price=551 | brand=None
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTNRKYL | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDT41TCW | FBM=0 | FBA=0 | price=416 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJNJJKF | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJJZ6K7 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJ2KW4Q | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJDD5QD | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJMFF27 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJ6L2T4 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHHSY2H4 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTRXM3Z | FBM=0 | FBA=0 | price=1100 | brand=UNFOOLED
+Listings products parsed: 16
+TIMING listing_map 0.24
+[INVENTORY DEBUG] B0HDTR3VNL | FBM=0.0 | FBA=99.0 | TOTAL=99.0 | inv={'totalInventory': 99, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 99, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 49, 'onHandFba': 99, 'fbaTotalQuantity': 148, 'fnSku': 'X002O3G1AH', 'sellerSku': '8906206610055', 'inventoryMaxDate': '2026-10-07T13:19:03Z'} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/41DnL7c6gPL.jpg', 'title': 'Unfooled UK-Based Oil Free Moisturizer for Sensitive Oily-Combination Skin | Patented SK-INFLUX® V MB, Melazero V2 Gel Matte Finish | Fragrance-Free, Non-Comedogenic | 50ml | Hydro-Balance Matte Crème', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED TEST-6', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HDTPVCQJ | FBM=2949.0 | FBA=150.0 | TOTAL=3099.0 | inv={'totalInventory': 150, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 150, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 150, 'fbaTotalQuantity': 150, 'fnSku': 'X002O3JAPP', 'sellerSku': '8906206610093', 'inventoryMaxDate': '2026-10-07T13:26:20Z'} | listing={'price': 951, 'image': 'https://m.media-amazon.com/images/I/31vvtNvWXDL.jpg', 'title': 'unfooled UK-Based Sunscreen for All Sensitive Skin Types | Barrier Repair Sunscreen Patented with ZinClear® IM, UV filter, Aloe & Centella | Fragrance-Free & Non-Comedogenic | 50ml | Barrier Bright Mineral SPF', 'brand': None, 'sku': '8906206610093_FBM', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 2949, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 2949}]}
+[INVENTORY DEBUG] B0HF84B8C9 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={'totalInventory': 0, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fbaTotalQuantity': 0, 'fnSku': 'X002O3798P', 'sellerSku': '8906206610086', 'inventoryMaxDate': '2026-08-18T10:11:43Z'} | listing={'price': 799, 'image': 'https://m.media-amazon.com/images/I/31CVln4FfZL.jpg', 'title': 'Unfooled UK-Based 2-in-1 Melt & Foam Face Wash for Sensitive Skin | 2-in-1 Barrier Repair Cleanser with Patented SK-INFLUX® V MB | Fragrance-Free & Non-Comedogenic | 100ml | CeraBarrier Melt & Foam Cleanser', 'brand': 'Unfooled', 'sku': '8906206610086', 'fnSku': 'X002O3798P', 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'AMAZON_IN', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HFZVS664 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={'totalInventory': 0, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fbaTotalQuantity': 0, 'fnSku': 'X002O7I219', 'sellerSku': 'O4-4RBJ-THWV', 'inventoryMaxDate': None} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31CVln4FfZL.jpg', 'title': 'unfooled UNFOOLED UK-Crafted CeraBarrier Melt & Foam Cleanser for Sensitive Skin | 2-in-1 Barrier Repair Cleanser with Patented SK-INFLUX® V MB | Fragrance-Free & Non-Comedogenic | 100ml', 'brand': 'Unfooled', 'sku': 'UNFOOLED TEST-7', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HJC6G2QY | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': None, 'image': 'https://m.media-amazon.com/images/I/31CVln4FfZL.jpg', 'title': 'UK-Based 2-in-1 Melt & Foam Face Wash for Sensitive Skin | 2-in-1 Barrier Repair Cleanser with Patented SK-INFLUX® V MB | Fragrance-Free & Non-Comedogenic | 100ml | CeraBarrier Melt & Foam Cleanser', 'brand': 'Unfooled', 'sku': 'UNFOOLED TEST-P', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': []}
+[INVENTORY DEBUG] B0HDTPJPH1 | FBM=2802.0 | FBA=149.0 | TOTAL=2951.0 | inv={'totalInventory': 149, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 149, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 149, 'fbaTotalQuantity': 149, 'fnSku': 'X002O3EA0Z', 'sellerSku': '8906206610062', 'inventoryMaxDate': '2026-10-05T18:10:48Z'} | listing={'price': 551, 'image': 'https://m.media-amazon.com/images/I/31Tf6XNt5LL.jpg', 'title': 'unfooled UK-Based Face Moisturizer for Sensitive Dry-Normal Skin | Barrier Repair Moisturizer with Patented SK-INFLUX® V MB, AQUAXYL™, Melazero® V2 | Fragrance-Free & Non-Comedogenic | 50ml | Bio-Restore Crème', 'brand': None, 'sku': '8906206610062_FBM', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 2802, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 2802}]}
+[INVENTORY DEBUG] B0HDTNRKYL | FBM=0.0 | FBA=150.0 | TOTAL=150.0 | inv={'totalInventory': 150, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 150, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 150, 'fbaTotalQuantity': 150, 'fnSku': 'X002O3JAPZ', 'sellerSku': '8906206610031', 'inventoryMaxDate': '2026-10-05T18:26:41Z'} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31Zs5UVgw8L.jpg', 'title': 'Unfooled UK-Based Face Cleanser for Sensitive Oily-Combination Skin | Barrier Repair Face Wash with Patented SK-INFLUX® V MB, Cholesterol & Ceramides | Fragrance-Free & Non-Comedogenic | 100ml | Sebum-Barrier Reset Cleanser', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED TEST-5', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HDT41TCW | FBM=0.0 | FBA=149.0 | TOTAL=149.0 | inv={'totalInventory': 149, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 149, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 149, 'fbaTotalQuantity': 149, 'fnSku': 'X002O3I0FL', 'sellerSku': '8906206610048', 'inventoryMaxDate': '2026-10-06T04:20:11Z'} | listing={'price': 416, 'image': 'https://m.media-amazon.com/images/I/310wBWtjbEL.jpg', 'title': 'Unfooled UNFOOLED UK-Based Face Cleanser for Sensitive Dry-Normal Skin | Barrier Repair Face Wash with Patented SK-INFLUX® V MB, Oat Kernel Extract | Fragrance-Free & Non-Comedogenic | 100ml | Barrier Guard Cleanser', 'brand': 'UNFOOLED', 'sku': '8906206610048', 'fnSku': 'X002O3I0FL', 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'AMAZON_IN', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHJNJJKF | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31fPqP4dyVL.jpg', 'title': 'UNFOOLED Bio-Restore Crème | Nourishing Face Moisturizer for Sensitive care', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED BRSS-5', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHJJZ6K7 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31Ytm9yNzrL.jpg', 'title': 'UNFOOLED UK-Crafted Barrier Bright Mineral SPF for All Sensitive Skin', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED BBMS-6', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHJ2KW4Q | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31hg6jl0vHL.jpg', 'title': 'UNFOOLED UK-Crafted Sebum-Barrier Reset for Sensitive Oily-Combination Skin', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED SBRC-4', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHJDD5QD | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31Su95v+YCL.jpg', 'title': 'UNFOOLED Hydro-Balance Matte Crème | Lightweight Gel Moisturizer for Sensitive | 50ml', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED HBMC-2', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHJMFF27 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31olk6hgWbL.jpg', 'title': 'UNFOOLED UK-Crafted CeraBarrier Melt & Foam Cleanser for Sensitive Skin', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED CBMF-7', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHJ6L2T4 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/31cqOtyPvWL.jpg', 'title': 'UNFOOLED Daylight Serum Sun Creme SPF 3-in-1', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED DSSC-3', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HHHSY2H4 | FBM=0.0 | FBA=0.0 | TOTAL=0.0 | inv={} | listing={'price': 199, 'image': 'https://m.media-amazon.com/images/I/319xUSr3MXL.jpg', 'title': 'UNFOOLED UK-Crafted Barrier Guard Cleanser for Sensitive Dry-Normal Skin', 'brand': 'UNFOOLED', 'sku': 'UNFOOLED BGC-1', 'fnSku': None, 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'DEFAULT', 'quantity': 0}]}
+[INVENTORY DEBUG] B0HDTRXM3Z | FBM=0.0 | FBA=150.0 | TOTAL=150.0 | inv={'totalInventory': 150, 'fulfillableQuantity': 0, 'inboundQuantity': 0, 'unfulfillableQuantity': 0, 'reservedQuantity': 0, 'fbaAvailable': 150, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 150, 'fbaTotalQuantity': 150, 'fnSku': 'X002O3G1A7', 'sellerSku': '8906206610079', 'inventoryMaxDate': '2026-10-06T01:04:42Z'} | listing={'price': 1100, 'image': 'https://m.media-amazon.com/images/I/31z7d+4ulgL.jpg', 'title': 'Unfooled UNFOOLED Daylight Serum Sun Creme SPF 3-in-1 Barrier Repair Sunscreen for All Sensitive Skin Types | Patented with Tinosorb S & Uvinul A Plus | Fragrance-Free, Non-Comedogenic | 50ml', 'brand': 'UNFOOLED', 'sku': '8906206610079', 'fnSku': 'X002O3G1A7', 'status': 'DISCOVERABLE', 'merchantAvailable': 0, 'fbaAvailable': 0, 'fbaInbound': 0, 'fbaUnfulfillable': 0, 'fbaReserved': 0, 'onHandFba': 0, 'fulfillmentRows': [{'channel': 'AMAZON_IN', 'quantity': 0}]}
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTR3VNL | FBM=0 | FBA=0 | price=509 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.23
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTR3VNL | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.27
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] B0HDTPVCQJ | FBM=2949 | FBA=0 | price=951 | brand=None
+Listings products parsed: 1
+TIMING listing_map 0.25
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTPVCQJ | FBM=0 | FBA=0 | price=909 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.23
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'value': 'Unfooled', 'language_tag': 'en_IN', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=Unfooled
+[LISTING] B0HF84B8C9 | FBM=0 | FBA=0 | price=799 | brand=Unfooled
+Listings products parsed: 1
+TIMING listing_map 0.41
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'value': 'Unfooled', 'language_tag': 'en_IN', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=Unfooled
+[LISTING] B0HFZVS664 | FBM=0 | FBA=0 | price=199 | brand=Unfooled
+Listings products parsed: 1
+TIMING listing_map 0.41
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'value': 'Unfooled', 'language_tag': 'en_IN', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=Unfooled
+[LISTING] B0HJC6G2QY | FBM=0 | FBA=0 | price=None | brand=Unfooled
+Listings products parsed: 1
+TIMING listing_map 0.36
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTPJPH1 | FBM=0 | FBA=0 | price=509 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.25
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=None | attribute_brandName=None | final_brand=None
+[LISTING] B0HDTPJPH1 | FBM=2802 | FBA=0 | price=551 | brand=None
+Listings products parsed: 1
+TIMING listing_map 0.27
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTNRKYL | FBM=0 | FBA=0 | price=416 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.27
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTNRKYL | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.27
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDT41TCW | FBM=0 | FBA=0 | price=416 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.3
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJNJJKF | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.26
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJJZ6K7 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.28
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJ2KW4Q | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.27
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJDD5QD | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.36
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJMFF27 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.36
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHJ6L2T4 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.39
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HHHSY2H4 | FBM=0 | FBA=0 | price=199 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.27
+[BRAND DEBUG] None | summary_brand=None | attribute_brand=[{'language_tag': 'en_IN', 'value': 'UNFOOLED', 'marketplace_id': 'A21TJRUUN4KGV'}] | attribute_brandName=None | final_brand=UNFOOLED
+[LISTING] B0HDTRXM3Z | FBM=0 | FBA=0 | price=1100 | brand=UNFOOLED
+Listings products parsed: 1
+TIMING listing_map 0.25
+[RETURNS] Requesting returns report: {'start': '2026-09-09T06:04:51.411069+00:00', 'end': '2026-10-09T06:04:51.411069+00:00'}
+[RETURNS] Using completed report: 50584020735 amzn1.spdoc.1.4.eu.7d4a8fa7-11a7-4245-8c4e-c0fdb9f9a933.T2F27O7L4J0NDO.401
+[RETURNS] Rows received: 1
+[RETURNS] Products with returns: 1
+TIMING fetch_returns_report 1.83
+TOTAL 72.5 ROWS 20

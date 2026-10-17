@@ -1,0 +1,1285 @@
+{
+  "reportData": {
+    "reportId": "inventory",
+    "dateRange": {
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-08"
+    },
+    "dateUpdated": [
+      2026,
+      10,
+      8
+    ],
+    "columns": [
+      {
+        "id": "ASIN",
+        "sortable": true,
+        "asinAttribute": true,
+        "currency": false,
+        "alwaysShow": true,
+        "startsHidden": false,
+        "transform": "NONE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": null,
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "ITEM_NAME",
+        "sortable": true,
+        "asinAttribute": true,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "NONE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": null,
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "BRAND",
+        "sortable": true,
+        "asinAttribute": true,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "NONE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": null,
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "SOURCEABLE_PRODUCT_OOS_PERCENTAGE",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "PERCENTAGE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "percent",
+          "ui-excel": "percent-decimal",
+          "api": "ratio"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "VENDOR_CONFIRMATION_RATE",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "PERCENTAGE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "percent",
+          "ui-excel": "percent-decimal",
+          "api": "ratio"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "NET_RECEIVED",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "NONE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "currency",
+          "ui-excel": "round-hundredths",
+          "api": "round-hundredths"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "NET_RECEIVED_UNITS",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "NONE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "quantity",
+          "ui-excel": "integer",
+          "api": "integer"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "OPEN_PO_QTY",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "quantity",
+          "ui-excel": "integer",
+          "homepage-kpi": "quantity",
+          "api": "integer"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": true,
+        "showKpiOnHomePage": true,
+        "isNew": false
+      },
+      {
+        "id": "RECEIVE_FILL_RATE",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "PERCENTAGE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "percent",
+          "ui-excel": "percent-decimal",
+          "api": "ratio"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "OVERALL_VENDOR_LEAD_TIME",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "NONE",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "l10n-round-hundredths",
+          "ui-excel": "round-hundredths",
+          "api": "round-hundredths"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "UNFILLED_CUST_ORDERED_UNITS",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "quantity",
+          "ui-excel": "integer",
+          "api": "integer"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "AGED_90_DAYS_SELLABLE_INVENTORY",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "currency",
+          "ui-excel": "round-hundredths",
+          "api": "round-hundredths"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "AGED_90_DAYS_SELLABLE_UNITS",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "quantity",
+          "ui-excel": "integer",
+          "api": "integer"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "SELLABLE_ON_HAND_INVENTORY",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": true,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "currency",
+          "ui-excel": "round-hundredths",
+          "api": "round-hundredths"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "SELLABLE_ON_HAND_UNITS",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": true,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "quantity",
+          "ui-excel": "integer",
+          "homepage-kpi": "quantity",
+          "api": "integer"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": true,
+        "showKpiOnHomePage": true,
+        "isNew": false
+      },
+      {
+        "id": "UNSELLABLE_ON_HAND_INVENTORY",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "currency",
+          "ui-excel": "round-hundredths",
+          "api": "round-hundredths"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": false,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      },
+      {
+        "id": "UNSELLABLE_ON_HAND_UNITS",
+        "sortable": true,
+        "asinAttribute": false,
+        "currency": false,
+        "alwaysShow": false,
+        "startsHidden": false,
+        "transform": "LAST_DAY",
+        "placeholderValue": null,
+        "comparison": "NONE",
+        "decoration": {
+          "ui": "quantity",
+          "ui-excel": "integer",
+          "api": "integer"
+        },
+        "metadata": null,
+        "showKpiOnLandingPage": true,
+        "showKpiOnHomePage": false,
+        "isNew": false
+      }
+    ],
+    "rows": [
+      [
+        {
+          "rawValue": "B0C57Z55Z3",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C57Z55Z3"
+        },
+        {
+          "rawValue": "Energizer 8000mAh UPS Power Bank for Router, 12V/9V DC Output, Automatic Backup for WiFi Router, Modem & CCTV, Compact Design | 1 Yr Warranty | Black Fireproof Durable Design",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 8000mAh UPS Power Bank for Router, 12V/9V DC Output, Automatic Backup for WiFi Router, Modem & CCTV, Compact Design | 1 Yr Warranty | Black Fireproof Durable Design"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "40.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "40"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "220273.01019319",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹2,20,273.01"
+        },
+        {
+          "rawValue": "118.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "118"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0C5CTJ1NL",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C5CTJ1NL"
+        },
+        {
+          "rawValue": "Energizer 3-in-1 Wireless Charging Station, 15W Magnetic Fast Charger, Foldable & Portable Slim Trave Friendly Charging Pad for iPhone 17/16/15/14/13/12, AirPods & Smartwatch | 1 Yr Warranty | Black",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 3-in-1 Wireless Charging Station, 15W Magnetic Fast Charger, Foldable & Portable Slim Trave Friendly Charging Pad for iPhone 17/16/15/14/13/12, AirPods & Smartwatch | 1 Yr Warranty | Black"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "30.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "30"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "313500.98462138",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹3,13,500.98"
+        },
+        {
+          "rawValue": "142.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "142"
+        },
+        {
+          "rawValue": "2301.71182087",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹2,301.71"
+        },
+        {
+          "rawValue": "1.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "1"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0C5DTQ78R",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C5DTQ78R"
+        },
+        {
+          "rawValue": "Energizer 20000mAh 65W Ultra Fast Charging Power Bank with Built-in USB-C Cable, Two-Way Fast Charge, 1-Year Warranty, Digital Display, PD Portable Charger for iPhone, Samsung & More | Grey",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 20000mAh 65W Ultra Fast Charging Power Bank with Built-in USB-C Cable, Two-Way Fast Charge, 1-Year Warranty, Digital Display, PD Portable Charger for iPhone, Samsung & More | Grey"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": null,
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": null
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": null,
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": null
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "402697.69060452",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹4,02,697.69"
+        },
+        {
+          "rawValue": "146.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "146"
+        },
+        {
+          "rawValue": "6398.9054736",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹6,398.91"
+        },
+        {
+          "rawValue": "2.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "2"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0C5WLD786",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C5WLD786"
+        },
+        {
+          "rawValue": "Energizer 22.5W Fast Charging Wireless Power Bank 10000mAh, 15W Qi Wireless, USB-C PD + QC Output, Compact Portable Charger for iPhone, Samsung, Android | Travel Friendly | 1 Yr Warranty | Blue",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 22.5W Fast Charging Wireless Power Bank 10000mAh, 15W Qi Wireless, USB-C PD + QC Output, Compact Portable Charger for iPhone, Samsung, Android | Travel Friendly | 1 Yr Warranty | Blue"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "101.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "101"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": "4.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "4"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "185369.86306238003",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,85,369.86"
+        },
+        {
+          "rawValue": "141.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "141"
+        },
+        {
+          "rawValue": "11922.06176848",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹11,922.06"
+        },
+        {
+          "rawValue": "8.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "8"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0GY5JQD6D",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0GY5JQD6D"
+        },
+        {
+          "rawValue": "Energizer 22.5W Fast Charging Wireless Power Bank 10000mAh, 15W Qi Wireless, USB-C PD + QC Output, Compact Portable Charger for iPhone, Samsung, Android | Travel Friendly | 1 Yr Warranty | Purple",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 22.5W Fast Charging Wireless Power Bank 10000mAh, 15W Qi Wireless, USB-C PD + QC Output, Compact Portable Charger for iPhone, Samsung, Android | Travel Friendly | 1 Yr Warranty | Purple"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": null,
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": null
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": null,
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": null
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "126757.37304144",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,26,757.37"
+        },
+        {
+          "rawValue": "96.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "96"
+        },
+        {
+          "rawValue": "1313.0037191",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,313.00"
+        },
+        {
+          "rawValue": "1.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "1"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0C5DKGG2J",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C5DKGG2J"
+        },
+        {
+          "rawValue": "Energizer 10000mAh 22.5W Fast Charging Power Bank with USB-C & USB-A Output, Built-in Cable, PD + QC, Two-Way Fast Charge, Portable Charger for iPhone, Samsung & Android | 1 Yr Warranty | Lavender",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 10000mAh 22.5W Fast Charging Power Bank with USB-C & USB-A Output, Built-in Cable, PD + QC, Two-Way Fast Charge, Portable Charger for iPhone, Samsung & Android | 1 Yr Warranty | Lavender"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": null,
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": null
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": null,
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": null
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "136936.45712556",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,36,936.46"
+        },
+        {
+          "rawValue": "138.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "138"
+        },
+        {
+          "rawValue": "2146.39955217",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹2,146.40"
+        },
+        {
+          "rawValue": "2.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "2"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0CBJF8NDW",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0CBJF8NDW"
+        },
+        {
+          "rawValue": "Energizer 10000mAh 22.5W Fast Charging Power Bank with USB-C & USB-A Output, Built-in Cable, PD + QC, Two-Way Fast Charge, Portable Charger for iPhone, Samsung & Android | 1 Yr Warranty | Grey",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 10000mAh 22.5W Fast Charging Power Bank with USB-C & USB-A Output, Built-in Cable, PD + QC, Two-Way Fast Charge, Portable Charger for iPhone, Samsung & Android | 1 Yr Warranty | Grey"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": "1.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "1"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "196917.55525799998",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,96,917.56"
+        },
+        {
+          "rawValue": "200.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "200"
+        },
+        {
+          "rawValue": "8762.82220827",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹8,762.82"
+        },
+        {
+          "rawValue": "8.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "8"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0C5H33GB2",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C5H33GB2"
+        },
+        {
+          "rawValue": "Energizer 10000mAh 22.5W Fast Charging Power Bank with USB-C & USB-A Output, Built-in Cable, PD + QC, Two-Way Fast Charge, Portable Charger for iPhone, Samsung & Android | 1 Yr Warranty | Green",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 10000mAh 22.5W Fast Charging Power Bank with USB-C & USB-A Output, Built-in Cable, PD + QC, Two-Way Fast Charge, Portable Charger for iPhone, Samsung & Android | 1 Yr Warranty | Green"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "38.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "38"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "115708.73026761001",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,15,708.73"
+        },
+        {
+          "rawValue": "115.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "115"
+        },
+        {
+          "rawValue": "1161.81177588",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹1,161.81"
+        },
+        {
+          "rawValue": "1.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "1"
+        }
+      ],
+      [
+        {
+          "rawValue": "B0C58BNM38",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "B0C58BNM38"
+        },
+        {
+          "rawValue": "Energizer 22.5W Fast Charging Wireless Power Bank 10000mAh, 15W Qi Wireless, USB-C PD + QC Output, Compact Portable Charger for iPhone, Samsung, Android | Travel Friendly | 1 Yr Warranty | Beige",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer 22.5W Fast Charging Wireless Power Bank 10000mAh, 15W Qi Wireless, USB-C PD + QC Output, Compact Portable Charger for iPhone, Samsung, Android | Travel Friendly | 1 Yr Warranty | Beige"
+        },
+        {
+          "rawValue": "Energizer",
+          "decoration": "none",
+          "currencyCode": "INR",
+          "value": "Energizer"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "2.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "2"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "percent",
+          "currencyCode": "INR",
+          "value": "0.00%"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "l10n-round-hundredths",
+          "currencyCode": "INR",
+          "value": "0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹0.00"
+        },
+        {
+          "rawValue": "0.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "0"
+        },
+        {
+          "rawValue": "332426.27960158",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹3,32,426.28"
+        },
+        {
+          "rawValue": "253.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "253"
+        },
+        {
+          "rawValue": "5252.0148764",
+          "decoration": "currency",
+          "currencyCode": "INR",
+          "value": "₹5,252.01"
+        },
+        {
+          "rawValue": "4.0",
+          "decoration": "quantity",
+          "currencyCode": "INR",
+          "value": "4"
+        }
+      ]
+    ],
+    "totals": null
+  }
+}
