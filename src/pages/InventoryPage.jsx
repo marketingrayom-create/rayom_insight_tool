@@ -17,7 +17,6 @@ function InHouseTable({ products }) {
 }
 
 function TransitTable({ shipments, onEdit, onDelete }) {
-  // Fields where only date should be displayed
   const dateOnlyFields = new Set([
     'PO Date',
     'Invoice Date',
@@ -25,13 +24,11 @@ function TransitTable({ shipments, onEdit, onDelete }) {
     'Pickup Date',
   ]);
 
-  // Fields where date + time should be displayed
   const dateTimeFields = new Set([
     'Appointment Date',
     'Delivered Date',
   ]);
 
-  // Format date only
   const formatDate = (value) => {
     if (!value) return '—';
 
@@ -291,13 +288,6 @@ function ApiInventoryTable({ data, loading, error }) {
         }
       }
 
-      /*
-       * IMPORTANT:
-       *
-       * Same EAN ki next API row aaye to
-       * EAN-level values update karenge.
-       */
-
       if (
         row.totalQuantity !== null &&
         row.totalQuantity !== undefined
@@ -401,13 +391,6 @@ function ApiInventoryTable({ data, loading, error }) {
               TOTAL AVAILABLE (ATP)
             </th>
 
-            {/* QUANTITY */}
-            {/* <th>
-              Available(ATP)
-              <span className="filter-mark">⌄</span>
-            </th> */}
-
-
             {/* NOT FOUND */}
             <th>
               NOT FOUND
@@ -482,14 +465,12 @@ function ApiInventoryTable({ data, loading, error }) {
                   }-${index}`}
               >
 
-                {/* ================= EAN ================= */}
                 <td className="grouped-ean-cell">
                   <strong>
                     {cleanDisplayValue(row.ean)}
                   </strong>
                 </td>
 
-                {/* ================= SKU ================= */}
                 <td>
                   <button
                     type="button"

@@ -158,33 +158,16 @@ const formatCompact = (number) =>
 
 function MarketplaceTrend({ dates, timePeriod }) {
   const [marketplace, setMarketplace] = useState('amazon_sc');
-  console.log('MarketplaceTrend dates:=====', dates);
-  // ============================================================
-  // OLD API DATA
-  // ONLY FOR GRAPH
-  // ============================================================
-
   const [rows, setRows] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-
-  // ============================================================
-  // NEW API DATA
-  // ONLY FOR MARKETPLACE DETAILS CARDS
-  // ============================================================
-
   const [marketplaceDetails, setMarketplaceDetails] = useState([]);
   const [detailsLoading, setDetailsLoading] = useState(true);
   const [detailsError, setDetailsError] = useState('');
-
   const [trendRows, setTrendRows] = useState([]);
   const [trendLoading, setTrendLoading] = useState(true);
   const [trendError, setTrendError] = useState('');
 
-  // ============================================================
-  // NEW API
-  // /ad-spends-by-marketplace-daily
-  // ============================================================
 
   useEffect(() => {
     const controller = new AbortController();
@@ -240,13 +223,7 @@ function MarketplaceTrend({ dates, timePeriod }) {
       })
       .catch((err) => {
         if (!controller.signal.aborted) {
-          console.error(
-            'Marketplace Details API error:',
-            err
-          );
-
           setMarketplaceDetails([]);
-
           setDetailsError(
             err.message ||
             'Unable to load marketplace details.'
@@ -397,11 +374,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
       })
       .catch((err) => {
         if (!controller.signal.aborted) {
-          console.error(
-            'Ad Efficiency Trend API error:',
-            err
-          );
-
           setTrendRows([]);
           setTrendError(
             err.message ||
@@ -421,11 +393,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
     dates.endDate,
     timePeriod,
   ]);
-
-  // ============================================================
-  // GRAPH DATA
-  // COMES ONLY FROM OLD API
-  // ============================================================
 
   const points = rows.map((row) => ({
     date: row.date,
@@ -586,10 +553,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
     }))
     .filter((row) => row.date);
 
-  // ============================================================
-  // FILTER CURRENT MARKETPLACE
-  // ============================================================
-
   const selectedTrendRows =
     normalisedTrendRows.filter((row) => {
       if (!row.marketplace) return true;
@@ -599,9 +562,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
       );
     });
 
-  // ============================================================
-  // GROUP BY DATE
-  // ============================================================
 
   const groupedTrend = new Map();
 
@@ -652,9 +612,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
         new Date(a.date) -
         new Date(b.date)
     );
-
-  // If the API does not return marketplace in each row,
-  // keep all rows visible rather than showing a blank graph.
   if (!graphPoints.length) {
     const fallback = new Map();
 
@@ -703,9 +660,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
           new Date(b.date)
       );
   }
-  // ============================================================
-  // GRAPH TOTALS
-  // ============================================================
 
   const graphSpendTotal =
     points.reduce(
@@ -724,11 +678,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
       ? graphSalesTotal / graphSpendTotal
       : 0;
 
-  // ============================================================
-  // NEW API DATA
-  // SELECT CURRENT MARKETPLACE
-  // ============================================================
-
   const selectedMarketplaceRows =
     marketplaceDetails.filter(
       (row) =>
@@ -738,10 +687,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
           .toLowerCase()
     );
 
-  // ============================================================
-  // TOTAL AD SPEND
-  // ============================================================
-
   const adSpend =
     selectedMarketplaceRows.reduce(
       (total, row) =>
@@ -749,10 +694,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
         Number(row?.ad_spend || 0),
       0
     );
-
-  // ============================================================
-  // TOTAL IMPRESSIONS
-  // ============================================================
 
   const impressions =
     selectedMarketplaceRows.reduce(
@@ -764,10 +705,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
       0
     );
 
-  // ============================================================
-  // TOTAL CLICKS
-  // ============================================================
-
   const clicks =
     selectedMarketplaceRows.reduce(
       (total, row) =>
@@ -775,11 +712,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
         Number(row?.ad_clicks || 0),
       0
     );
-
-  // ============================================================
-  // TOTAL ATTRIBUTED SALES
-  // ============================================================
-
   const attributedSales =
     selectedMarketplaceRows.reduce(
       (total, row) =>
@@ -790,27 +722,12 @@ function MarketplaceTrend({ dates, timePeriod }) {
       0
     );
 
-  // ============================================================
-  // TOTAL ORDERS
-  // ============================================================
 
   const orders =
     selectedMarketplaceRows.reduce(
       (total, row) =>
         total +
         Number(row?.ad_orders || 0),
-      0
-    );
-
-  // ============================================================
-  // TOTAL UNITS
-  // ============================================================
-
-  const units =
-    selectedMarketplaceRows.reduce(
-      (total, row) =>
-        total +
-        Number(row?.ad_units || 0),
       0
     );
 
@@ -1374,11 +1291,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
         )}
       </div>
 
-      {/* ======================================================
-          MARKETPLACE SUMMARY
-          DATA FROM NEW API
-      ====================================================== */}
-
       <div className="marketplace-summary">
 
         {/* AD SPEND */}
@@ -1520,11 +1432,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
           {detailsError}
         </div>
       )}
-
-      {/* ======================================================
-          GRAPH
-          DATA ONLY FROM OLD API
-      ====================================================== */}
 
       <div className="marketplace-trend">
 
@@ -1785,11 +1692,6 @@ function MarketplaceTrend({ dates, timePeriod }) {
   );
 }
 
-// ============================================================
-// REPORT COMPONENT
-// OLD fetchAdvertising API UNTOUCHED
-// ============================================================
-
 function Report({ kind, dates }) {
   const product = kind === 'sku';
 
@@ -1819,14 +1721,11 @@ function Report({ kind, dates }) {
       hasNext: false,
     });
 
-  const [loading, setLoading] =
-    useState(true);
+  const [loading, setLoading] = useState(true);
 
-  const [error, setError] =
-    useState('');
+  const [error, setError] = useState('');
 
-  const [refresh, setRefresh] =
-    useState(0);
+  const [refresh, setRefresh] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -1864,11 +1763,6 @@ function Report({ kind, dates }) {
           level: 'campaign',
         }),
     };
-
-    // ========================================================
-    // OLD REPORT API
-    // DO NOT CHANGE
-    // ========================================================
 
     fetchAdvertising(
       kind,
@@ -2295,10 +2189,6 @@ function Report({ kind, dates }) {
   );
 }
 
-// ============================================================
-// MAIN PAGE
-// ============================================================
-
 export default function AdvertisingPage() {
   const [dates, setDates] =
     useState({
@@ -2308,14 +2198,9 @@ export default function AdvertisingPage() {
         '2026-09-14',
     });
 
-  // NEW API TIME PERIOD
-  const [
-    trendTimePeriod,
-    setTrendTimePeriod,
-  ] = useState('7D');
+  const [trendTimePeriod, setTrendTimePeriod] = useState('7D');
 
-  const [draft, setDraft] =
-    useState(dates);
+  const [draft, setDraft] = useState(dates);
 
   const valid =
     draft.startDate &&
@@ -2325,11 +2210,6 @@ export default function AdvertisingPage() {
 
   return (
     <div className="content advertising-page">
-
-      {/* ======================================================
-          FILTERS
-      ====================================================== */}
-
       <form
         className="performance-filters"
         onSubmit={(e) => {
@@ -2339,9 +2219,6 @@ export default function AdvertisingPage() {
             setDates({
               ...draft,
             });
-
-            // NEW API:
-            // CUSTOM after Apply
             setTrendTimePeriod(
               'CUSTOM'
             );
@@ -2418,16 +2295,6 @@ export default function AdvertisingPage() {
 
       </form>
 
-      {/* ======================================================
-          MARKETPLACE
-          
-          GRAPH:
-          /marketplace-daily-trend
-          
-          CARDS:
-          /ad-spends-by-marketplace-daily
-      ====================================================== */}
-
       <MarketplaceTrend
         dates={dates}
         timePeriod={
@@ -2435,21 +2302,11 @@ export default function AdvertisingPage() {
         }
       />
 
-      {/* ======================================================
-          PRODUCT REPORT
-          OLD fetchAdvertising API
-      ====================================================== */}
-
       <Report
         key={`sku-${dates.startDate}-${dates.endDate}`}
         kind="sku"
         dates={dates}
       />
-
-      {/* ======================================================
-          CAMPAIGN REPORT
-          OLD fetchAdvertising API
-      ====================================================== */}
 
       <Report
         key={`campaign-${dates.startDate}-${dates.endDate}`}

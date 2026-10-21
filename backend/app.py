@@ -23,7 +23,7 @@ from flipkart import flipkart
 from shopify import shopify
 from meta_ads import meta_ads
 from amazon_ads import amazon_ads
-from amazon_vendor import vendor, cb_product_inventory, product_sales_periods, refresh_product_sales, performance_7d
+from amazon_vendor import vendor, cb_product_inventory, product_sales_periods, refresh_product_sales, refresh_product_inventory, performance_7d
 BASE=os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(BASE,".env"))
 load_dotenv(os.path.join(os.path.dirname(BASE),".env"))
@@ -36,7 +36,10 @@ from threading import Lock, Thread
 
 from reorder_planning import planning
 
+from inventory_integration import inventory_integration
+
 app=Flask(__name__)
+app.register_blueprint(inventory_integration)
 app.register_blueprint(planning)
 app.register_blueprint(flipkart)
 app.register_blueprint(shopify)
@@ -2570,6 +2573,7 @@ def products():
         data=[row for row in data if not re.search(r'[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\U00020000-\U000323af]',str(row.get('sellerSku') or row.get('sku') or ''))]
         seller_products_by_asin={row.get('asin'):row for row in data}
         vendor_stock={}
+        inventory_pending=False
         if organization()=='rayom':
             try: vendor_stock=cb_product_inventory()
             except (sqlite3.Error,ValueError): pass
@@ -2594,6 +2598,13 @@ def products():
                     row=dict(asin=asin,productId=asin,itemTitle=stock.get('productTitle') or asin,brand=stock.get('brand'),productUrl='https://www.amazon.in/dp/'+asin,marketplace='amazon_vendor',vendorOnly=True,finalPrice=None,fbmAvailable=None,fbaAvailable=None,fbaReserved=None)
                 merged.append(row)
             data=merged
+        if organization() in ('rayom','linso'):
+            inventory_pending=refresh_product_inventory('cb' if organization()=='rayom' else 'mvr')
+        if organization()=='rayom':
+            listed={row.get('asin') for row in data}
+            for asin,stock in vendor_stock.items():
+                if asin not in listed:
+                    data.append(dict(asin=asin,productId=asin,itemTitle=stock.get('productTitle') or asin,brand=stock.get('brand'),productUrl='https://www.amazon.in/dp/'+asin,marketplace='amazon_vendor',vendorOnly=True,finalPrice=None,fbmAvailable=None,fbaAvailable=None,fbaReserved=None))
         data=[dict(row,vendorInventory=vendor_stock.get(row.get('asin'),{}).get('units'),vendorInventoryDate=vendor_stock.get(row.get('asin'),{}).get('asOf')) for row in data]
         data=[dict(row,combinedInventory=norm(num(row.get('fbmAvailable'))+num(row.get('fbaAvailable'))+num(row.get('vendorInventory')))) for row in data]
         vendor_periods={}
@@ -2603,7 +2614,7 @@ def products():
             vendor_sales,vendor_periods=product_sales_periods(vendor_account,include_units=True)
             vendor_sales_pending=not all(period['complete'] for period in vendor_periods.values())
             refresh_product_sales(vendor_account,vendor_periods)
-            if organization()=='linso':
+            if organization() in ('rayom','linso'):
                 listed={row.get('asin') for row in data}
                 for asin,period_values in vendor_sales.items():
                     if asin in listed or not any(isinstance(value,dict) and (value.get('orderedRevenue') or value.get('orderedUnits')) for value in period_values.values()): continue
@@ -2613,7 +2624,7 @@ def products():
                     row.update(vendorInventory=None,vendorInventoryDate=None,combinedInventory=norm(num(row.get('fbmAvailable'))+num(row.get('fbaAvailable'))))
                     data.append(row);listed.add(asin)
             for row in data:
-                for days in (1,7,15,30):
+                for days in (1,7,15,30,45):
                     complete=vendor_periods[str(days)]['complete']
                     sales=vendor_sales.get(row.get('asin'),{}).get(str(days),{'orderedUnits':0,'orderedRevenue':0})
                     units=sales.get('orderedUnits') if isinstance(sales,dict) and complete else None
@@ -2652,6 +2663,7 @@ def products():
         return jsonify(
             success=True,
             salesRefreshing=vendor_sales_pending if vendor_periods else sales_refresh_pending(),
+            inventoryRefreshing=inventory_pending,
             vendorSalesPeriods=vendor_periods,
             products=data[start:end],
             total=total,

@@ -4,9 +4,6 @@ import { useReorderTable, ReorderHeaders, ReorderCells, ReorderSaveButton } from
 import { refreshedInventoryRows, applyUniwareStock } from '../utils/productInventory';
 import { fetchAmazonProducts, fetchUniwareInventory } from '../apiFile/amazonApi';
 
-/* =======================================================
-   HELPERS
-======================================================= */
 
 const getField = (row, ...keys) => {
   if (!row) return null;
@@ -96,9 +93,7 @@ const formatPercent = (value) => {
   })}%`;
 };
 
-/* =======================================================
-   TABLE COLUMNS
-======================================================= */
+
 
 const COLUMNS = [
   {
@@ -184,16 +179,7 @@ const COLUMNS = [
   },
 ];
 
-/* =======================================================
-   PERFORMANCE METRIC SELECTORS
 
-   Default:
-   - DRR 1D
-   - Revenue 1D
-
-   DRR and Revenue share one selected period so both columns
-   always show the same date window.
-======================================================= */
 
 const PERFORMANCE_METRICS = {
   drr: {
@@ -214,6 +200,7 @@ const PERFORMANCE_METRICS = {
         label: 'DRR 15D',
         aliases: ['drr_15d', 'drr15d'],
       },
+      45: { key: 'drr_45d', label: 'DRR 45D', aliases: ['drr_45d', 'drr45d'] },
       30: {
         key: 'drr_30d',
         label: 'DRR 30D',
@@ -240,6 +227,7 @@ const PERFORMANCE_METRICS = {
         label: 'Revenue 15D',
         aliases: ['revenue_15d', 'revenue15d', 'ordersRevenue15d'],
       },
+      45: { key: 'revenue_45d', label: 'Revenue 45D', aliases: ['revenue_45d', 'revenue45d', 'ordersRevenue45d'] },
       30: {
         key: 'revenue_30d',
         label: 'Revenue 30D',
@@ -249,9 +237,7 @@ const PERFORMANCE_METRICS = {
   },
 };
 
-/* =======================================================
-   FORMAT TABLE VALUE
-======================================================= */
+
 
 const formatCell = (row, column) => {
   const rawValue = getField(
@@ -309,12 +295,6 @@ const ProductIdentity = ({ row }) => {
     'name'
   );
 
-  // const brand = getField(
-  //   row,
-  //   'brand',
-  //   'brand_name',
-  //   'brandName'
-  // );
 
   const fulfillment = getField(
     row,
@@ -550,6 +530,7 @@ export default function ProductPerformancePage({ organization }) {
     COLUMNS[2],
     COLUMNS[4],
     COLUMNS[5],
+    ...(vendorMetrics ? [{ key: `vendorOrderedUnits${selectedPeriod}d`, label: `Sales ${selectedPeriod}D`, aliases: [`vendorOrderedUnits${selectedPeriod}d`], type: 'number' }] : []),
     selectedDrrColumn,
     selectedRevenueColumn,
     COLUMNS[6],
@@ -573,9 +554,7 @@ export default function ProductPerformancePage({ organization }) {
   const [refresh, setRefresh] =
     useState(0);
 
-  /* =====================================================
-     SEARCH DEBOUNCE
-  ===================================================== */
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -593,15 +572,8 @@ export default function ProductPerformancePage({ organization }) {
     };
   }, [searchInput]);
 
-  /* =====================================================
-     API CALL
-  ===================================================== */
+
   const loadAmazonProducts = async (signal, background = false) => {
-
-    console.log(
-      '[ProductPerformance] loadAmazonProducts called'
-    );
-
     try {
 
       if (!background) setLoading(true);
@@ -619,9 +591,6 @@ export default function ProductPerformancePage({ organization }) {
         });
 
       if (signal?.aborted) {
-        console.log(
-          '[ProductPerformance] Request aborted'
-        );
         return;
       }
 
@@ -639,7 +608,7 @@ export default function ProductPerformancePage({ organization }) {
         total: result?.total ?? products.length,
         hasNext: Boolean(result?.hasNext),
       }));
-      setSalesRefreshing(Boolean(result?.salesRefreshing));
+      setSalesRefreshing(Boolean(result?.salesRefreshing || result?.inventoryRefreshing));
       fetchUniwareInventory({ products, organization, signal }).then((stock) => {
         if (signal?.aborted) return;
         setData(current => applyUniwareStock(current, stock, organization));
@@ -647,19 +616,13 @@ export default function ProductPerformancePage({ organization }) {
         if (signal?.aborted) return;
         setData(current => current.organization === organization ? { ...current, uniwareMessage: error.message } : current);
       });
-      return Boolean(result?.salesRefreshing);
+      return Boolean(result?.salesRefreshing || result?.inventoryRefreshing);
 
     }
     catch (error) {
       if (error?.name === 'AbortError') {
-        console.log('[ProductPerformance] Request cancelled');
         return;
       }
-
-      console.error(
-        '[ProductPerformance] Amazon API error:',
-        error
-      );
 
       if (signal?.aborted) {
         return;
@@ -680,11 +643,6 @@ export default function ProductPerformancePage({ organization }) {
   };
 
   useEffect(() => {
-
-    console.log(
-      '[ProductPerformance] useEffect triggered'
-    );
-
     const controller =
       new AbortController();
 
@@ -699,22 +657,12 @@ export default function ProductPerformancePage({ organization }) {
     load();
 
     return () => {
-
-      console.log(
-        '[ProductPerformance] cleanup'
-      );
-
       controller.abort();
       clearTimeout(timer);
     };
 
   }, [refresh, query.page, query.limit, query.sortBy, query.sortOrder, query.search, organization]);
 
-
-
-  /* =====================================================
-     SORT
-  ===================================================== */
 
   const changeSort = (column) => {
 
@@ -740,16 +688,9 @@ export default function ProductPerformancePage({ organization }) {
     });
   };
 
-  /* =====================================================
-     CLEAR FILTERS
-  ===================================================== */
-
   const clearFilters = () => {
 
     setSearchInput('');
-
-    // Restore the default metric view:
-    // DRR 1D + Revenue 1D.
     setMetricType('drr');
     setSelectedPeriod('1');
 
@@ -762,11 +703,6 @@ export default function ProductPerformancePage({ organization }) {
     });
 
   };
-
-  /* =====================================================
-     PAGINATION
-  ===================================================== */
-
   const startItem =
     data.rows.length === 0
       ? 0
@@ -796,19 +732,11 @@ export default function ProductPerformancePage({ organization }) {
       query.page < totalPages
     );
 
-  /* =====================================================
-     RENDER
-  ===================================================== */
 
   return (
     <div className="content product-performance-page">
 
       <section className="product-performance-card">
-
-        {/* =============================================
-            HEADER
-        ============================================= */}
-
         <div className="product-performance-header">
 
           <h1>
@@ -832,13 +760,14 @@ export default function ProductPerformancePage({ organization }) {
 
         {/* <ReorderSaveButton planning={planning} /> */}
 
-        {salesRefreshing && <p role="status">Sales metrics are updating in the background. Inventory is available. {vendorMetrics ? 'Checking every 10 seconds until the selected sales periods are complete.' : 'One automatic refresh runs after 75 seconds; use Refresh if sales are still incomplete.'}</p>}
+        {salesRefreshing && <p role="status">Vendor sales or inventory reports are updating in the background. {vendorMetrics ? 'Checking every 10 seconds until the selected sales periods are complete.' : 'One automatic refresh runs after 75 seconds; use Refresh if sales are still incomplete.'}</p>}
+
+        {planning.live.message && <p role="status" style={{ padding: '0 20px' }}>{planning.live.message}</p>}
 
         {/* SEARCH / FILTER TOOLBAR */}
 
-        {/* 
         {vendorMetrics && data.vendorSalesPeriods && <p className="vendor-account-scope" style={{ padding: '0 20px' }}>
-          Revenue = Amazon Vendor Ordered Revenue. DRR = Ordered Units ÷ selected days. {data.vendorSalesPeriods[drrPeriod] && <>DRR units/day {drrPeriod}D: {data.vendorSalesPeriods[drrPeriod].start} to {data.vendorSalesPeriods[drrPeriod].end}. </>}{data.vendorSalesPeriods[revenuePeriod] && <>Revenue {revenuePeriod}D: {data.vendorSalesPeriods[revenuePeriod].start} to {data.vendorSalesPeriods[revenuePeriod].end}. </>}{(!data.vendorSalesPeriods[drrPeriod]?.complete || !data.vendorSalesPeriods[revenuePeriod]?.complete) && 'Missing dates are loading; incomplete totals show —.'}</p>} */}
+          Revenue = Amazon Vendor Ordered Revenue. DRR = Ordered Units ÷ selected days. {data.vendorSalesPeriods[drrPeriod] && <>DRR units/day {drrPeriod}D: {data.vendorSalesPeriods[drrPeriod].start} to {data.vendorSalesPeriods[drrPeriod].end}. </>}{data.vendorSalesPeriods[revenuePeriod] && <>Revenue {revenuePeriod}D: {data.vendorSalesPeriods[revenuePeriod].start} to {data.vendorSalesPeriods[revenuePeriod].end}. </>}{(!data.vendorSalesPeriods[drrPeriod]?.complete || !data.vendorSalesPeriods[revenuePeriod]?.complete) && 'Missing dates are loading; incomplete totals show —.'}</p>}
         {data.uniwareMessage && <p role="status" style={{ padding: '0 20px' }}>{data.uniwareMessage}</p>}
         {/* {data.uniwareScope && <p className="vendor-account-scope" style={{ padding: '0 20px' }}>Uniware Inventory: {data.uniwareScope}</p>} */}
         <div className="product-performance-toolbar">
@@ -932,6 +861,7 @@ export default function ProductPerformancePage({ organization }) {
               <option value="7">7 Days</option>
               <option value="15">15 Days</option>
               <option value="30">30 Days</option>
+              {vendorMetrics && <option value="45">45 Days</option>}
             </select>
           </div>
 
@@ -997,19 +927,11 @@ export default function ProductPerformancePage({ organization }) {
             <div className="product-table-scroll">
 
               <table className="product-performance-table">
-
                 <thead>
-
                   <tr>
-
-                    {/* Product */}
-
                     <th className="product-column">
                       PRODUCT
                     </th>
-
-                    {/* Other Columns */}
-
                     {visibleColumns.map(
                       (column) => {
 
@@ -1085,9 +1007,6 @@ export default function ProductPerformancePage({ organization }) {
 
                       return (
                         <tr key={rowId}>
-
-                          {/* Product */}
-
                           <td className="product-column">
 
                             <ProductIdentity
@@ -1095,9 +1014,6 @@ export default function ProductPerformancePage({ organization }) {
                             />
 
                           </td>
-
-                          {/* Metrics */}
-
                           {visibleColumns.map(
                             (column) => {
 
@@ -1119,7 +1035,7 @@ export default function ProductPerformancePage({ organization }) {
 
                               return (
                                 <td
-                                  title={column.key === 'uniwareInventory' ? `EAN: ${(row.uniwareEans || []).join(', ') || 'Not matched'}. Available stock across all warehouse shelves.` : undefined}
+                                  title={column.key === 'vendorInventory' ? `VC inventory as of ${row.vendorInventoryDate || 'report pending'}` : column.key === 'uniwareInventory' ? `EAN: ${(row.uniwareEans || []).join(', ') || 'Not matched'}. Available stock across all warehouse shelves.` : undefined}
                                   key={
                                     column.key
                                   }
@@ -1169,10 +1085,6 @@ export default function ProductPerformancePage({ organization }) {
           )}
 
         </div>
-
-        {/* =============================================
-            FOOTER / PAGINATION
-        ============================================= */}
 
         <div className="product-table-footer">
 

@@ -210,3 +210,11 @@ export async function fetchVendorReorder(organization,asins,signal){
     if(!response.ok||!result.success)throw new Error(result.message||'Vendor Central planning unavailable.');
     return result;
 }
+
+export async function fetchInventoryTransit(organization, signal) {
+    const base = AMAZON_API_BASE_URL.replace(/\/$/, '');
+    const response = await fetch(`${base}/api/inventory/in-transit?organization=${encodeURIComponent(organization)}&includeUnknown=false`, {signal});
+    const result = await response.json();
+    if (!response.ok || !result.success) throw new Error(result.message || 'Inventory in-transit report unavailable.');
+    return result;
+}

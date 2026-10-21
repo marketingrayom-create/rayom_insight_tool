@@ -157,6 +157,43 @@ def cb_product_inventory(account_id='cb'):
         result[row['asin']]=dict(units=units if isinstance(units,(int,float)) and not isinstance(units,bool) else None,asOf=as_of,updatedAt=updated,productTitle=row.get('productTitle'),brand=row.get('brand'))
     return result
 
+def refresh_product_inventory(account_id):
+    """Advance the latest inventory report without blocking product requests."""
+    end=inventory_latest_date()
+    report_key=(account_id,'inventory@MANUFACTURING',end,end)
+    if snapshot(report_key)['status']=='DONE': return False
+    job_key=(account_id,'inventory',end)
+    with PRODUCT_SALES_LOCK:
+        if PRODUCT_SALES_JOBS.get(job_key,0)>time.monotonic(): return True
+        PRODUCT_SALES_JOBS[job_key]=float('inf')
+    def run():
+        try:
+            config=account(account_id)
+            for _ in range(60):
+                with ACTIVE_LOCK:
+                    available=report_key not in ACTIVE
+                    if available: ACTIVE.add(report_key)
+                if not available:
+                    time.sleep(5); continue
+                try:
+                    result=sync_daily_inventory_range(config,report_key)
+                    save(report_key,result)
+                    sync_error(report_key,None)
+                    if result['status']=='DONE': return
+                    delay=5
+                except VendorError as exc:
+                    sync_error(report_key,str(exc))
+                    if exc.status!=429: return
+                    delay=exc.retry_after
+                finally:
+                    with ACTIVE_LOCK: ACTIVE.discard(report_key)
+                time.sleep(delay)
+        finally:
+            with PRODUCT_SALES_LOCK: PRODUCT_SALES_JOBS[job_key]=time.monotonic()+60
+    threading.Thread(target=run,daemon=True).start()
+    return True
+
+
 def range_snapshot(key):
     """Read cached retail periods without creating a completed range snapshot."""
     data=snapshot(key)
@@ -166,6 +203,12 @@ def range_snapshot(key):
         sources=db.execute("SELECT start,end,rows,updated FROM snapshots WHERE account=? AND kind=? AND status='DONE' AND start<=? AND end>=? ORDER BY updated DESC",(key[0],key[1],key[3],key[2])).fetchall()
     merged={}; covered=set(); updated=[]
     for start,end,content,synced in sources:
+        if key[2]<=start and end<=key[3]:
+            day=datetime.strptime(start,'%Y-%m-%d').date()
+            until=datetime.strptime(end,'%Y-%m-%d').date()
+            while day<=until:
+                covered.add(day.isoformat()); day+=timedelta(days=1)
+            if synced: updated.append(synced)
         for raw in json.loads(content):
             row=dict(raw)
             first=str(row.get('startDate') or start)[:10]
@@ -182,7 +225,7 @@ def range_snapshot(key):
             while day<=until:
                 covered.add(day.isoformat()); day+=timedelta(days=1)
             if synced: updated.append(synced)
-    if not merged: return data,False
+    if not merged and not covered: return data,False
     data['rows']=sorted(merged.values(),key=lambda row:(row['endDate'],str(row.get('asin',''))))
     data['updated']=max(updated) if updated else None
     data['coverage']=dict(source='savedReports',dates=sorted(covered),complete=len(covered)==(datetime.strptime(key[3],'%Y-%m-%d')-datetime.strptime(key[2],'%Y-%m-%d')).days+1)
@@ -255,7 +298,7 @@ def performance_7d(account_id):
 def product_sales_periods(account_id,include_units=False):
     end=inventory_latest_date()
     periods={};metrics={}
-    for days in (1,7,15,30):
+    for days in (1,7,15,30,45):
         start=(datetime.strptime(end,'%Y-%m-%d')-timedelta(days=days-1)).strftime('%Y-%m-%d')
         data,_=range_snapshot((account_id,'sales@MANUFACTURING',start,end))
         complete=data.get('coverage',{}).get('complete',data['status']=='DONE')
@@ -281,7 +324,7 @@ def refresh_product_sales(account_id,periods):
                 # Make the latest day available before filling older windows.
                 # Re-read coverage so completed chunks are reused on each poll.
                 _, current_periods=product_sales_periods(account_id)
-                missing=next((current_periods[str(days)] for days in (1,7,15,30) if not current_periods[str(days)]['complete']),None)
+                missing=next((current_periods[str(days)] for days in (1,7,15,30,45) if not current_periods[str(days)]['complete']),None)
                 if missing is None: return
                 report_key=(account_id,'sales@MANUFACTURING',missing['start'],end)
                 with ACTIVE_LOCK:
@@ -292,7 +335,9 @@ def refresh_product_sales(account_id,periods):
                 try:
                     result=sync_daily_inventory_range(config,report_key)
                     save(report_key,result)
+                    sync_error(report_key,None)
                 except VendorError as exc:
+                    sync_error(report_key,str(exc))
                     if exc.status!=429: return
                     delay=exc.retry_after
                 else:

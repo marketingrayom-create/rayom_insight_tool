@@ -6,7 +6,7 @@ export function dynamicReorderPlan(product,savedRows,live){
  const ean=conflict?null:live?.ean||(eans.length===1?eans[0]:null);
  const saved=ean?savedRows.find(row=>row.ean===ean):null;
  const manual=key=>saved?.sources?.[key]==='Manual input';
- const settings={leadTimeDays:manual('leadTimeDays')?saved.leadTimeDays:numeric(live?.vendorLeadTimeDays)?live.vendorLeadTimeDays:saved?.leadTimeDays??60,
+ const settings={leadTimeDays:60,
   safetyBufferDays:saved?.safetyBufferDays??15,safetyStock:saved?.safetyStock??20,demandDays:45,
   incoming:manual('incoming')?saved.incoming:null,override:manual('override')?saved.override:null};
  const row={ean,asin:product.asin,productName:product.itemTitle||live?.productName||product.asin,
@@ -21,6 +21,7 @@ export function dynamicReorderPlan(product,savedRows,live){
   fbfRecallInTransit:null,
   sources:{},matchError:conflict?'Vendor ASIN/EAN does not match the catalogue EAN.':null};
  for(const key of SETTING_KEYS)row.sources[key]=manual(key)?'Manual input':'Planning setting';
+ row.sources.leadTimeDays='Fixed vendor lead time: 60 days';
  row.sources.fbaSales45=live?.fbaSource||'Seller Central FBA orders pending';
  row.sources.fbaInTransit='Seller Central FBA inbound working + shipped + receiving units';
  row.sources.fbaOpenPo='Seller Central FBA has no Vendor Central purchase orders; unavailable';
@@ -29,7 +30,7 @@ export function dynamicReorderPlan(product,savedRows,live){
  for(const key of ['vcStock'])row.sources[key]=`Vendor Central ${live?.inventoryDate||'report pending'}; ASIN ${product.asin}`;
  row.sources.vcOpenPo=`${live?.openPoSource||'Confirmed Manage PO items'}; refreshed ${live?.openPoAsOf||'pending'}; ASIN ${product.asin}`;
  row.sources.vcSales45=`Vendor Central ordered units: ${live?.salesStart||'pending'} to ${live?.salesEnd||'pending'}; ASIN ${product.asin}`;
- row.sources.vcInTransit=`Vendor Central Data Kiosk ${live?.transitDate||'pending / unavailable'}; ASIN ${product.asin}`;
+ row.sources.vcInTransit=live?.vcTransitSource||`Vendor Central Data Kiosk ${live?.transitDate||'pending / unavailable'}; ASIN ${product.asin}`;
  return row;
 }
 export function planningSettingsPayload(row){

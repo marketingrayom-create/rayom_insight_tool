@@ -131,13 +131,15 @@ def live_data(company,asins):
         output[asin]={**row,'asin':asin,'vcStock':row.get('vcStock'),'vcOpenPo':po['quantities'].get(asin,0) if po is not None else None,
           'openPoAsOf':po['asOf'] if po is not None else None,
           'openPoSource':'Manage POs: confirmed OPEN item requested units',
-          'vcSales45':number(sales_rows.get(asin,{}).get('orderedUnits')),
+          'vcSales45':number(sales_rows.get(asin,{}).get('orderedUnits',0)) if complete else None,
           'vcInTransit':transit_rows.get(asin,{}).get('vcInTransit'),
           'ean':transit_rows.get(asin,{}).get('ean'),'salesStart':start,'salesEnd':end,
           'inventoryDate':end,'transitDate':end if transit['status']=='DONE' else None}
     pending=not complete or inventory['status']!='DONE' or transit['status'] not in ('DONE','FATAL','CANCELLED')
     if pending:refresh(account,start,end)
-    messages=[*_errors.get((account,start,end),[]),*([po_message] if po_message else [])]
+    covered=sales.get('coverage',{}).get('dates',[])
+    sales_message='' if complete else f'VC Sales (45 Days): {start} to {end}; {len(covered)}/45 dates ready. Amazon report is preparing; totals appear after all dates are complete.'
+    messages=[*([sales_message] if sales_message else []),*_errors.get((account,start,end),[]),*([po_message] if po_message else [])]
     if transit['status'] in ('FATAL','CANCELLED'):messages=[*messages,'Amazon could not prepare VC transit data. Check Data Kiosk access.']
     return {'success':True,'inventory':output,'account':account,'salesRange':{'start':start,'end':end},
             'pending':pending,'message':' '.join(messages),'source':'Amazon Vendor Central (manufacturing view)'}
