@@ -158,7 +158,7 @@ const formatCompact = (number) =>
 
 function MarketplaceTrend({ dates, timePeriod }) {
   const [marketplace, setMarketplace] = useState('amazon_sc');
-
+  console.log('MarketplaceTrend dates:=====', dates);
   // ============================================================
   // OLD API DATA
   // ONLY FOR GRAPH
